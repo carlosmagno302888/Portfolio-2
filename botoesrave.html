@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balada de Botões</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    .color-button {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Clique em um botão. Melhor, Clique em todos bem rápido!</h1>
+
+  <button class="color-button" style="background-color: #ff9999;" onclick="changeColor('#ff9999')">Vermelho</button>
+  <button class="color-button" style="background-color: #99ccff;" onclick="changeColor('#99ccff')">Azul</button>
+  <button class="color-button" style="background-color: #99ff99;" onclick="changeColor('#99ff99')">Verde</button>
+  <button class="color-button" style="background-color: #ffff99;" onclick="changeColor('#ffff99')">Amarelo</button>
+  <button class="color-button" style="background-color: #ffccff;" onclick="changeColor('#ffccff')">Rosa</button>
+
+  <script>
+    function changeColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+
+</body>
+</html>
